@@ -962,27 +962,27 @@ body.dark .work-links img {
 .skills-imgs {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  gap: var(--gutter-x-large);
-  padding-block-start: var(--gutter-x-large);
+  justify-content: flex-start;
+  gap: var(--gutter-small);
+  padding-block: var(--gutter-small);
 }
 
 .skills-img {
-  block-size: 135px;
-  inline-size: 135px;
+  block-size: 50px;
+  inline-size: 50px;
 }
 
 @media (max-width: 1100px) {
   .skills-img {
-    block-size: 100px;
-    inline-size: 100px;
+    block-size: 40px;
+    inline-size: 40px;
   }
 }
 
 @media (max-width: 810px) {
   .skills-img {
-    block-size: 85px;
-    inline-size: 85px;
+    block-size: 35px;
+    inline-size: 35px;
   }
 }
 
@@ -991,15 +991,15 @@ body.dark .work-links img {
     gap: var(--gutter-large);
   }
   .skills-img {
-    block-size: 70px;
-    inline-size: 70px;
+    block-size: 25px;
+    inline-size: 25px;
   }
 }
 
 @media (max-width: 340px) {
   .skills-img {
-    block-size: 55px;
-    inline-size: 55px;
+    block-size: 20px;
+    inline-size: 20px;
   }
 }
 
