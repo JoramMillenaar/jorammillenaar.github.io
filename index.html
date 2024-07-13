@@ -83,7 +83,6 @@
 <script>
       const theme = localStorage.getItem("theme") || "dark";
       document.body.classList.add(theme);
-
 </script>
 
 <header class="header">
@@ -214,7 +213,8 @@
                     <picture class="work-img">
                         <img
                                 loading="lazy"
-                                src="assets/images/work/green-maritime.png"
+                                srcset="assets/images/work/green-maritime-small.png 650w, assets/images/work/green-maritime-medium.png 1200w"
+                                sizes="(max-width: 650px) 650px, 1200px"
                                 alt="Screenshot of the Green Maritime Initiative"
                         />
                     </picture>
