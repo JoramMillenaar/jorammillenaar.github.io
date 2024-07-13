@@ -658,6 +658,20 @@ body.light .logo {
   transition: 0.6s all;
 }
 
+.work-img svg {
+    position: absolute; /* Takes the SVG out of flow and positions relatively to the container */
+    top: 50%; /* Position the top of the element at the center */
+    left: 50%; /* Position the left of the element at the center */
+    transform: translate(-50%, -50%); /* Adjust the position to truly center the SVG */
+    width: 50px; /* Or any size */
+    height: 50px; /* Maintain aspect ratio */
+}
+
+.youtube-placeholder {
+   position: relative;
+   cursor: pointer;
+}
+
 body.light .work-img {
   box-shadow: var(--shadow);
 }
