@@ -689,8 +689,9 @@ body.light .work-img {
 }
 
 .work-links {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--gutter-x-small);
 }
 
@@ -721,6 +722,8 @@ body.dark .work-links img {
 }
 
 .work-textbox h3,
+.work-textbox h6,
+.work-textbox .skills-imgs,
 .work-text,
 .work-technologies,
 .work-links {
