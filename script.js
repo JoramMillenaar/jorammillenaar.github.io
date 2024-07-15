@@ -116,7 +116,7 @@ yearEl.textContent = new Date().getFullYear();
 document.getElementById('youtube-video-placeholder').addEventListener('click', function() {
     var width = this.offsetWidth;
     var height = this.offsetHeight;
-    this.innerHTML = `<iframe width="${width}" height="${height}" src="https://www.youtube.com/embed/y5xptzj57sY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    this.innerHTML = `<iframe width="${width}" height="${height}" src="https://www.youtube.com/embed/y5xptzj57sY?autoplay=1&amp;start=6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
 });
 
 
