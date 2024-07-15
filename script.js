@@ -118,3 +118,15 @@ document.getElementById('youtube-video-placeholder').addEventListener('click', f
     var height = this.offsetHeight;
     this.innerHTML = `<iframe width="${width}" height="${height}" src="https://www.youtube.com/embed/y5xptzj57sY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
 });
+
+
+function sendEmail() {
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+
+    var subject = encodeURIComponent(name + " Reaching Out");
+    var emailBody = message;
+
+    window.location.href = "mailto:" + "lockups-entity.0a" + "+jorammillenaar" + "@" + "icloud.com" + "?subject=" + subject + "&body=" + encodeURIComponent(emailBody);
+}
