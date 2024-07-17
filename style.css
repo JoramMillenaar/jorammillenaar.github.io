@@ -548,6 +548,10 @@ main {
     flex-direction: column;
     width: 80%;
   }
+  .slider {
+    margin: auto;
+    width: fit-content;
+  }
 }
 
 /* --------------------------------- */
@@ -1315,17 +1319,17 @@ input:checked {
 .slider-container {
   overflow: hidden;
   height: var(--h1);
+  display: flex;
 }
 
 .slider-container-text {
   display: inline;
-  float: left;
   margin: 0;
 }
 
 .slider-container-list {
   margin-top: 0;
-  padding-left: 156px;
+  padding-left: var(--gutter-micro);
   text-align: left;
   list-style: none;
   -webkit-animation-name: change;
@@ -1334,6 +1338,7 @@ input:checked {
   animation-name: change;
   animation-duration: 40s;
   animation-iteration-count: infinite;
+  height: fit-content;
 }
 
 .slider-container-list-item {
@@ -1370,93 +1375,85 @@ input:checked {
 
 @-webkit-keyframes change {
   0%, 100% { transform: translate3d(0, 0, 0); }
-  5% { transform: translate3d(0, -10%, 0); }
-  10% { transform: translate3d(0, -20%, 0); }
-  15% { transform: translate3d(0, -30%, 0); }
-  20% { transform: translate3d(0, -40%, 0); }
-  25% { transform: translate3d(0, -50%, 0); }
-  30% { transform: translate3d(0, -60%, 0); }
-  35% { transform: translate3d(0, -70%, 0); }
-  40% { transform: translate3d(0, -80%, 0); }
-  45% { transform: translate3d(0, -90%, 0); }
-  50% { transform: translate3d(0, -100%, 0); }
-  55% { transform: translate3d(0, -90%, 0); }
-  60% { transform: translate3d(0, -80%, 0); }
-  65% { transform: translate3d(0, -70%, 0); }
-  70% { transform: translate3d(0, -60%, 0); }
-  75% { transform: translate3d(0, -50%, 0); }
-  80% { transform: translate3d(0, -40%, 0); }
-  85% { transform: translate3d(0, -30%, 0); }
-  90% { transform: translate3d(0, -20%, 0); }
-  95% { transform: translate3d(0, -10%, 0); }
+  5.56% { transform: translate3d(0, -10%, 0); }
+  11.11% { transform: translate3d(0, -20%, 0); }
+  16.67% { transform: translate3d(0, -30%, 0); }
+  22.22% { transform: translate3d(0, -40%, 0); }
+  27.78% { transform: translate3d(0, -50%, 0); }
+  33.33% { transform: translate3d(0, -60%, 0); }
+  38.89% { transform: translate3d(0, -70%, 0); }
+  44.44% { transform: translate3d(0, -80%, 0); }
+  50% { transform: translate3d(0, -90%, 0); }
+  55.56% { transform: translate3d(0, -80%, 0); }
+  61.11% { transform: translate3d(0, -70%, 0); }
+  66.67% { transform: translate3d(0, -60%, 0); }
+  72.22% { transform: translate3d(0, -50%, 0); }
+  77.78% { transform: translate3d(0, -40%, 0); }
+  83.33% { transform: translate3d(0, -30%, 0); }
+  88.89% { transform: translate3d(0, -20%, 0); }
+  94.44% { transform: translate3d(0, -10%, 0); }
 }
 
 @-o-keyframes change {
   0%, 100% { transform: translate3d(0, 0, 0); }
-  5% { transform: translate3d(0, -10%, 0); }
-  10% { transform: translate3d(0, -20%, 0); }
-  15% { transform: translate3d(0, -30%, 0); }
-  20% { transform: translate3d(0, -40%, 0); }
-  25% { transform: translate3d(0, -50%, 0); }
-  30% { transform: translate3d(0, -60%, 0); }
-  35% { transform: translate3d(0, -70%, 0); }
-  40% { transform: translate3d(0, -80%, 0); }
-  45% { transform: translate3d(0, -90%, 0); }
-  50% { transform: translate3d(0, -100%, 0); }
-  55% { transform: translate3d(0, -90%, 0); }
-  60% { transform: translate3d(0, -80%, 0); }
-  65% { transform: translate3d(0, -70%, 0); }
-  70% { transform: translate3d(0, -60%, 0); }
-  75% { transform: translate3d(0, -50%, 0); }
-  80% { transform: translate3d(0, -40%, 0); }
-  85% { transform: translate3d(0, -30%, 0); }
-  90% { transform: translate3d(0, -20%, 0); }
-  95% { transform: translate3d(0, -10%, 0); }
+  5.56% { transform: translate3d(0, -10%, 0); }
+  11.11% { transform: translate3d(0, -20%, 0); }
+  16.67% { transform: translate3d(0, -30%, 0); }
+  22.22% { transform: translate3d(0, -40%, 0); }
+  27.78% { transform: translate3d(0, -50%, 0); }
+  33.33% { transform: translate3d(0, -60%, 0); }
+  38.89% { transform: translate3d(0, -70%, 0); }
+  44.44% { transform: translate3d(0, -80%, 0); }
+  50% { transform: translate3d(0, -90%, 0); }
+  55.56% { transform: translate3d(0, -80%, 0); }
+  61.11% { transform: translate3d(0, -70%, 0); }
+  66.67% { transform: translate3d(0, -60%, 0); }
+  72.22% { transform: translate3d(0, -50%, 0); }
+  77.78% { transform: translate3d(0, -40%, 0); }
+  83.33% { transform: translate3d(0, -30%, 0); }
+  88.89% { transform: translate3d(0, -20%, 0); }
+  94.44% { transform: translate3d(0, -10%, 0); }
 }
 
 
 @-moz-keyframes change {
   0%, 100% { transform: translate3d(0, 0, 0); }
-  5% { transform: translate3d(0, -10%, 0); }
-  10% { transform: translate3d(0, -20%, 0); }
-  15% { transform: translate3d(0, -30%, 0); }
-  20% { transform: translate3d(0, -40%, 0); }
-  25% { transform: translate3d(0, -50%, 0); }
-  30% { transform: translate3d(0, -60%, 0); }
-  35% { transform: translate3d(0, -70%, 0); }
-  40% { transform: translate3d(0, -80%, 0); }
-  45% { transform: translate3d(0, -90%, 0); }
-  50% { transform: translate3d(0, -100%, 0); }
-  55% { transform: translate3d(0, -90%, 0); }
-  60% { transform: translate3d(0, -80%, 0); }
-  65% { transform: translate3d(0, -70%, 0); }
-  70% { transform: translate3d(0, -60%, 0); }
-  75% { transform: translate3d(0, -50%, 0); }
-  80% { transform: translate3d(0, -40%, 0); }
-  85% { transform: translate3d(0, -30%, 0); }
-  90% { transform: translate3d(0, -20%, 0); }
-  95% { transform: translate3d(0, -10%, 0); }
+  5.56% { transform: translate3d(0, -10%, 0); }
+  11.11% { transform: translate3d(0, -20%, 0); }
+  16.67% { transform: translate3d(0, -30%, 0); }
+  22.22% { transform: translate3d(0, -40%, 0); }
+  27.78% { transform: translate3d(0, -50%, 0); }
+  33.33% { transform: translate3d(0, -60%, 0); }
+  38.89% { transform: translate3d(0, -70%, 0); }
+  44.44% { transform: translate3d(0, -80%, 0); }
+  50% { transform: translate3d(0, -90%, 0); }
+  55.56% { transform: translate3d(0, -80%, 0); }
+  61.11% { transform: translate3d(0, -70%, 0); }
+  66.67% { transform: translate3d(0, -60%, 0); }
+  72.22% { transform: translate3d(0, -50%, 0); }
+  77.78% { transform: translate3d(0, -40%, 0); }
+  83.33% { transform: translate3d(0, -30%, 0); }
+  88.89% { transform: translate3d(0, -20%, 0); }
+  94.44% { transform: translate3d(0, -10%, 0); }
 }
 
 @keyframes change {
   0%, 100% { transform: translate3d(0, 0, 0); }
-  5% { transform: translate3d(0, -10%, 0); }
-  10% { transform: translate3d(0, -20%, 0); }
-  15% { transform: translate3d(0, -30%, 0); }
-  20% { transform: translate3d(0, -40%, 0); }
-  25% { transform: translate3d(0, -50%, 0); }
-  30% { transform: translate3d(0, -60%, 0); }
-  35% { transform: translate3d(0, -70%, 0); }
-  40% { transform: translate3d(0, -80%, 0); }
-  45% { transform: translate3d(0, -90%, 0); }
-  50% { transform: translate3d(0, -100%, 0); }
-  55% { transform: translate3d(0, -90%, 0); }
-  60% { transform: translate3d(0, -80%, 0); }
-  65% { transform: translate3d(0, -70%, 0); }
-  70% { transform: translate3d(0, -60%, 0); }
-  75% { transform: translate3d(0, -50%, 0); }
-  80% { transform: translate3d(0, -40%, 0); }
-  85% { transform: translate3d(0, -30%, 0); }
-  90% { transform: translate3d(0, -20%, 0); }
-  95% { transform: translate3d(0, -10%, 0); }
+  5.56% { transform: translate3d(0, -10%, 0); }
+  11.11% { transform: translate3d(0, -20%, 0); }
+  16.67% { transform: translate3d(0, -30%, 0); }
+  22.22% { transform: translate3d(0, -40%, 0); }
+  27.78% { transform: translate3d(0, -50%, 0); }
+  33.33% { transform: translate3d(0, -60%, 0); }
+  38.89% { transform: translate3d(0, -70%, 0); }
+  44.44% { transform: translate3d(0, -80%, 0); }
+  50% { transform: translate3d(0, -90%, 0); }
+  55.56% { transform: translate3d(0, -80%, 0); }
+  61.11% { transform: translate3d(0, -70%, 0); }
+  66.67% { transform: translate3d(0, -60%, 0); }
+  72.22% { transform: translate3d(0, -50%, 0); }
+  77.78% { transform: translate3d(0, -40%, 0); }
+  83.33% { transform: translate3d(0, -30%, 0); }
+  88.89% { transform: translate3d(0, -20%, 0); }
+  94.44% { transform: translate3d(0, -10%, 0); }
 }
