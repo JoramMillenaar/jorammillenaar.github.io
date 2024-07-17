@@ -1302,3 +1302,161 @@ input:checked {
 .tech {
     font-family: 'Tech', "Mona Sans", sans-serif;
 }
+
+
+/* --------------------------------- */
+/* ----- Title Slider -----*/
+/* --------------------------------- */
+.slider {
+  font-family: 'Tech', "Mona Sans", sans-serif;
+  margin-bottom: 0.7rem;
+}
+
+.slider-container {
+  overflow: hidden;
+  height: var(--h1);
+}
+
+.slider-container-text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.slider-container-list {
+  margin-top: 0;
+  padding-left: 156px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+
+.slider-container-list-item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes change {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  5% { transform: translate3d(0, -10%, 0); }
+  10% { transform: translate3d(0, -20%, 0); }
+  15% { transform: translate3d(0, -30%, 0); }
+  20% { transform: translate3d(0, -40%, 0); }
+  25% { transform: translate3d(0, -50%, 0); }
+  30% { transform: translate3d(0, -60%, 0); }
+  35% { transform: translate3d(0, -70%, 0); }
+  40% { transform: translate3d(0, -80%, 0); }
+  45% { transform: translate3d(0, -90%, 0); }
+  50% { transform: translate3d(0, -100%, 0); }
+  55% { transform: translate3d(0, -90%, 0); }
+  60% { transform: translate3d(0, -80%, 0); }
+  65% { transform: translate3d(0, -70%, 0); }
+  70% { transform: translate3d(0, -60%, 0); }
+  75% { transform: translate3d(0, -50%, 0); }
+  80% { transform: translate3d(0, -40%, 0); }
+  85% { transform: translate3d(0, -30%, 0); }
+  90% { transform: translate3d(0, -20%, 0); }
+  95% { transform: translate3d(0, -10%, 0); }
+}
+
+@-o-keyframes change {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  5% { transform: translate3d(0, -10%, 0); }
+  10% { transform: translate3d(0, -20%, 0); }
+  15% { transform: translate3d(0, -30%, 0); }
+  20% { transform: translate3d(0, -40%, 0); }
+  25% { transform: translate3d(0, -50%, 0); }
+  30% { transform: translate3d(0, -60%, 0); }
+  35% { transform: translate3d(0, -70%, 0); }
+  40% { transform: translate3d(0, -80%, 0); }
+  45% { transform: translate3d(0, -90%, 0); }
+  50% { transform: translate3d(0, -100%, 0); }
+  55% { transform: translate3d(0, -90%, 0); }
+  60% { transform: translate3d(0, -80%, 0); }
+  65% { transform: translate3d(0, -70%, 0); }
+  70% { transform: translate3d(0, -60%, 0); }
+  75% { transform: translate3d(0, -50%, 0); }
+  80% { transform: translate3d(0, -40%, 0); }
+  85% { transform: translate3d(0, -30%, 0); }
+  90% { transform: translate3d(0, -20%, 0); }
+  95% { transform: translate3d(0, -10%, 0); }
+}
+
+
+@-moz-keyframes change {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  5% { transform: translate3d(0, -10%, 0); }
+  10% { transform: translate3d(0, -20%, 0); }
+  15% { transform: translate3d(0, -30%, 0); }
+  20% { transform: translate3d(0, -40%, 0); }
+  25% { transform: translate3d(0, -50%, 0); }
+  30% { transform: translate3d(0, -60%, 0); }
+  35% { transform: translate3d(0, -70%, 0); }
+  40% { transform: translate3d(0, -80%, 0); }
+  45% { transform: translate3d(0, -90%, 0); }
+  50% { transform: translate3d(0, -100%, 0); }
+  55% { transform: translate3d(0, -90%, 0); }
+  60% { transform: translate3d(0, -80%, 0); }
+  65% { transform: translate3d(0, -70%, 0); }
+  70% { transform: translate3d(0, -60%, 0); }
+  75% { transform: translate3d(0, -50%, 0); }
+  80% { transform: translate3d(0, -40%, 0); }
+  85% { transform: translate3d(0, -30%, 0); }
+  90% { transform: translate3d(0, -20%, 0); }
+  95% { transform: translate3d(0, -10%, 0); }
+}
+
+@keyframes change {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  5% { transform: translate3d(0, -10%, 0); }
+  10% { transform: translate3d(0, -20%, 0); }
+  15% { transform: translate3d(0, -30%, 0); }
+  20% { transform: translate3d(0, -40%, 0); }
+  25% { transform: translate3d(0, -50%, 0); }
+  30% { transform: translate3d(0, -60%, 0); }
+  35% { transform: translate3d(0, -70%, 0); }
+  40% { transform: translate3d(0, -80%, 0); }
+  45% { transform: translate3d(0, -90%, 0); }
+  50% { transform: translate3d(0, -100%, 0); }
+  55% { transform: translate3d(0, -90%, 0); }
+  60% { transform: translate3d(0, -80%, 0); }
+  65% { transform: translate3d(0, -70%, 0); }
+  70% { transform: translate3d(0, -60%, 0); }
+  75% { transform: translate3d(0, -50%, 0); }
+  80% { transform: translate3d(0, -40%, 0); }
+  85% { transform: translate3d(0, -30%, 0); }
+  90% { transform: translate3d(0, -20%, 0); }
+  95% { transform: translate3d(0, -10%, 0); }
+}
