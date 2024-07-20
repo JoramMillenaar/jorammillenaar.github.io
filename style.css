@@ -326,6 +326,7 @@ body.light .btn-cta:focus {
 
 .link {
   display: inline-block;
+  cursor: pointer;
   font-weight: 600;
   font-size: var(--text-small);
   padding: var(--gutter-nano) 0;
@@ -741,8 +742,8 @@ body.dark .work-links img {
   transition: 0.3s transform ease-in;
 }
 
-.work-links > a:last-child:hover,
-.work-links > a:last-child:focus {
+.work-links > a:hover,
+.work-links > a:focus {
   transform: scale(1.1);
 }
 
@@ -1305,6 +1306,124 @@ input:checked {
 
 .tech {
     font-family: 'Tech', "Mona Sans", sans-serif;
+}
+
+
+/* --------------------------------- */
+/* ----- Modal -----*/
+/* --------------------------------- */
+
+.modal {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-box {
+    min-width: 450px;
+    flex: 1;
+}
+
+header.modal-box {
+    max-width: 400px;
+}
+
+.modal-container {
+    padding-block-start: 7rem;
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    justify-content: center;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.modal-article {
+    background: var(--bg-color-secondary);
+    padding: var(--gutter-x-small);
+    border-radius: var(--gutter-nano);
+    box-shadow: 0 0 10px gray;
+    margin: var(--gutter-micro);
+    margin-bottom: 3vw;
+    height: fit-content;
+    min-width: 250px;
+}
+
+header .modal-article {
+    padding: 0px;
+}
+
+.modal-header-content {
+    padding: var(--gutter-x-small);
+}
+
+
+.modal-table tr td:last-child {
+    font-weight: 200;
+}
+
+.modal-table {
+    border-collapse: collapse;
+    padding-top: var(--gutter-micro);
+}
+
+.modal-table td {
+    border-top: 1px solid rgba(88, 88, 88, 0.297);
+    border-left: 1px solid rgba(88, 88, 88, 0.297);
+    padding: 8px;
+}
+
+
+.modal-table tr:first-child td {
+    border-top: none;
+}
+
+.modal-table td:first-child {
+    border-left: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-article ul {
+    padding-left: 20px;
+}
+
+.modal-panel {
+    padding: var(--gutter-x-small);
+    border-top: 1px solid #ddd;
+}
+
+.modal-text {
+    padding-top: var(--gutter-x-small);
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-img {
+    border-radius: var(--gutter-nano) var(--gutter-nano) 0 0;
 }
 
 
