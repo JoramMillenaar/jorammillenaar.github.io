@@ -1326,6 +1326,18 @@ input:checked {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.modal-container {
+    padding-block-start: 7rem;
+    margin: auto;
+    justify-content: center;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    position: absolute;
+    padding: 5% 5% 0 5%;
+}
+
 .modal-box {
     min-width: 450px;
     flex: 1;
@@ -1333,18 +1345,6 @@ input:checked {
 
 header.modal-box {
     max-width: 400px;
-}
-
-.modal-container {
-    padding-block-start: 7rem;
-    width: 90%;
-    margin: auto;
-    position: absolute;
-    justify-content: center;
-    overflow: scroll;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
 }
 
 .modal-article {
