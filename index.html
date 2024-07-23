@@ -142,8 +142,8 @@
 </header>
 
 <!-- Modal -->
-<div class="modal" id="modal">
-    <div class="modal-container" onclick="closePopup()">
+<div class="modal" id="therapieland-modal">
+    <div class="modal-container" onclick="closeModal('therapieland-modal')">
         <header class="modal-box" onclick="preventClick(event)">
             <div class="modal-article">
                 <img class="modal-img" src="assets/images/therapieland.png">
@@ -248,7 +248,7 @@
                         </div>
                         <!-- Link to read more about the project -->
                         <div class="work-links">
-                            <a id="modal-btn" class="link" onclick="closePopup()">Read More</a>
+                            <a class="link" onclick="openModal('therapieland-modal')">Read More</a>
                             <a href="#testimonials" class="link">Testimonials</a>
                         </div>
                     </div>
@@ -638,27 +638,26 @@
                     </p>
                 </div>
                 <form onsubmit="sendEmail(); return false;" class="contact-form" method="post" enctype="text/plain">
-                    <form onsubmit="sendEmail(); return false;" class="contact-form" method="post" enctype="text/plain">
-                        <div class="form-field">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" id="name" required/>
-                        </div>
-                        <div class="form-field">
-                            <label for="email">Email</label>
-                            <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    required
-                                    inputmode="email"
-                            />
-                        </div>
-                        <div class="form-field">
-                            <label for="message">How can I help you?</label>
-                            <textarea name="message" id="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-cta">Send</button>
-                    </form>
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required/>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                inputmode="email"
+                        />
+                    </div>
+                    <div class="form-field">
+                        <label for="message">How can I help you?</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-cta">Send</button>
+                </form>
             </div>
         </div>
     </section>
