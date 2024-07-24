@@ -966,6 +966,15 @@ body.dark .work-links img {
 .testimonial-text {
   font-size: var(--text-small);
   margin-block-end: var(--gutter-x-small);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-text .link {
+  margin-left: auto;
+  order: 2;
+  padding-bottom: 0;
 }
 
 .testimonial-author {

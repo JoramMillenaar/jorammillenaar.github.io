@@ -141,7 +141,7 @@
     </div>
 </header>
 
-<!-- Modal -->
+<!-- Modals -->
 <div class="modal" id="therapieland-modal">
     <div class="modal-container" onclick="closeModal('therapieland-modal')">
         <header class="modal-box" onclick="preventClick(event)">
@@ -196,11 +196,61 @@
                     </li>
                 </ul>
             </div>
-<!--            <div class="modal-article" onclick="preventClick(event)">-->
-<!--                <h3 class="h3">References and additional information</h3>-->
-<!--                <p class="modal-text">For further details on projects and contributions, please refer to the project documentation and team-->
-<!--                    meetings records available on request.</p>-->
-<!--            </div>-->
+            <!--            <div class="modal-article" onclick="preventClick(event)">-->
+            <!--                <h3 class="h3">References and additional information</h3>-->
+            <!--                <p class="modal-text">For further details on projects and contributions, please refer to the project documentation and team-->
+            <!--                    meetings records available on request.</p>-->
+            <!--            </div>-->
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" id="mario-modal">
+    <div class="modal-container" onclick="closeModal('mario-modal')">
+        <div class="modal-box">
+            <div class="modal-article" onclick="preventClick(event)">
+                <figure class="testimonial-author">
+                    <img
+                            src="assets/images/testimonials/mario.jpg"
+                            alt="Mario"
+                            loading="lazy"
+                    />
+                    <figcaption>
+                        <h3 class="h3">Mario de Sousa</h3>
+                        <p class="testimonial-author-job">Lead Software Engineer @ Therapieland</p>
+                    </figcaption>
+                </figure>
+                <p class="modal-text">
+                    While at Therapieland, Joram was a valuable and indispensable member of our development team. He was
+                    integral to the successful implementation and deployment of our new patient treatment and management
+                    platform. His work on critical systems and tools ensured that our existing users could be migrated
+                    effortlessly (from our legacy platform) with no disruption in the delivery of services. Through his
+                    drive and initiative, Joram built a remarkable data visualisation tool, that gave us vital insights
+                    into our current user-base and the interdependencies between various domain entities, allowing us to
+                    make informed decisions about our migration path going forward, and allowed us to identify any
+                    potential risks involved.
+                </p>
+                <p class="modal-text">
+                    Joram's ability to acquire new skills, and effectively apply them to his work, is outstanding. He is
+                    intelligent, naturally curious, hard-working, and constantly striving to improve himself as a
+                    developer: traits that were highly valued and appreciated within our team during our demanding
+                    development roadmap. He has an infectious personality and a sharp wit, and always added his positive
+                    energy to the team.
+                </p>
+                <p class="modal-text">
+                    It was an absolute pleasure working with Joram. I would gladly have him on my team again and any
+                    team would be fortunate to have him.
+                    Mario de Sousa - Lead Software Engineer, Therapieland
+                    “He is intelligent, naturally curious, hard-working, and constantly striving to improve himself as a
+                    developer”
+                </p>
+            </div>
+            <!--            <div class="modal-article" onclick="preventClick(event)">-->
+            <!--                <h3 class="h3">References and additional information</h3>-->
+            <!--                <p class="modal-text">For further details on projects and contributions, please refer to the project documentation and team-->
+            <!--                    meetings records available on request.</p>-->
+            <!--            </div>-->
         </div>
     </div>
 </div>
@@ -569,6 +619,7 @@
                         He is intelligent, naturally curious, hard-working, and constantly striving to improve himself
                         as a developer [...]. He has an infectious personality and a sharp wit, and always added his
                         positive energy to the team.
+                        <a class="link" onclick="openModal('mario-modal')">Read More</a>
                     </blockquote>
                     <figure class="testimonial-author">
                         <img
