@@ -978,7 +978,7 @@ body.dark .work-links img {
 }
 
 .testimonial-author {
-  margin-block-start: auto;
+  margin-block-start: 8px;
   display: flex;
   align-items: center;
   gap: var(--gutter-micro);
@@ -990,6 +990,14 @@ body.dark .work-links img {
 
 .testimonial-author-name,
 .testimonial-author-job {
+  font-size: initial;
+}
+
+.testimonial .link {
+  margin-block-start: auto;
+  margin-left: auto;
+  padding: 0;
+  font-weight: 500;
   font-size: initial;
 }
 

@@ -82,6 +82,10 @@
 <script>
       const theme = localStorage.getItem("theme") || "dark";
       document.body.classList.add(theme);
+
+
+
+
 </script>
 
 <header class="header">
@@ -241,16 +245,70 @@
                 <p class="modal-text">
                     It was an absolute pleasure working with Joram. I would gladly have him on my team again and any
                     team would be fortunate to have him.
-                    Mario de Sousa - Lead Software Engineer, Therapieland
-                    “He is intelligent, naturally curious, hard-working, and constantly striving to improve himself as a
-                    developer”
                 </p>
             </div>
-            <!--            <div class="modal-article" onclick="preventClick(event)">-->
-            <!--                <h3 class="h3">References and additional information</h3>-->
-            <!--                <p class="modal-text">For further details on projects and contributions, please refer to the project documentation and team-->
-            <!--                    meetings records available on request.</p>-->
-            <!--            </div>-->
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="marike-modal">
+    <div class="modal-container" onclick="closeModal('marike-modal')">
+        <div class="modal-box">
+            <div class="modal-article" onclick="preventClick(event)">
+                <figure class="testimonial-author">
+                    <img
+                            src="assets/images/testimonials/marike.jpg"
+                            alt="Marike"
+                            loading="lazy"
+                    />
+                    <figcaption>
+                        <h3 class="h3">Marike de Haan</h3>
+                        <p class="testimonial-author-job">CFO and Creative Director @ Therapieland</p>
+                    </figcaption>
+                </figure>
+                <p class="modal-text">
+                    Joram has worked in the Product Development Team that I was PO of for more than 3 years. When he
+                    started, he was a junior developer, and we immediately saw how dedicated and eager to learn he was.
+                    We saw him growing almost every day. He has been off great value, always contributing to technical
+                    ánd functional discussions. He was one of the first in our team to start working with co-pilot,
+                    pioneering for us and getting the other team-members up to speed after he investigated it
+                    thoroughly. He has proactively build features that turned out to be of great value for our company,
+                    and has always shown great dedication and commitment. And besides his great development-skills, he
+                    is also a great guy and a pleasure to work with!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="jose-modal">
+    <div class="modal-container" onclick="closeModal('jose-modal')">
+        <div class="modal-box">
+            <div class="modal-article" onclick="preventClick(event)">
+                <figure class="testimonial-author">
+                    <img
+                            src="assets/images/testimonials/jose.jpg"
+                            alt="Jose"
+                            loading="lazy"
+                    />
+                    <figcaption>
+                        <h3 class="h3">Jose Martinez</h3>
+                        <p class="testimonial-author-job">Senior Software Engineer @ Therapieland</p>
+                    </figcaption>
+                </figure>
+                <p class="modal-text">
+                    After three awesome years working with Joram, I just want to give a big shout-out to him. It's been
+                    a blast on both the professional and personal fronts. He is the go-to guy for bouncing around ideas
+                    – he's always up for a chat and has this knack for pushing us towards the best solutions.
+                </p>
+                <p class="modal-text">
+                    One of the cool things about him is his superpower of turning messy, vague ideas into something
+                    concrete and organized.
+                </p>
+                <p class="modal-text">
+                    Hope our paths cross again down the road. Can't wait for more adventures with Joram in the future!
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -619,8 +677,8 @@
                         He is intelligent, naturally curious, hard-working, and constantly striving to improve himself
                         as a developer [...]. He has an infectious personality and a sharp wit, and always added his
                         positive energy to the team.
-                        <a class="link" onclick="openModal('mario-modal')">Read More</a>
                     </blockquote>
+                    <a class="link" onclick="openModal('mario-modal')">Read More</a>
                     <figure class="testimonial-author">
                         <img
                                 src="assets/images/testimonials/mario.jpg"
@@ -638,6 +696,7 @@
                         We immediately saw how dedicated and eager to learn he was. We saw him growing almost every day.
                         He has been of great value, always contributing to technical and functional discussions.
                     </blockquote>
+                    <a class="link" onclick="openModal('marike-modal')">Read More</a>
                     <figure class="testimonial-author">
                         <img
                                 src="assets/images/testimonials/marike.jpg"
@@ -656,6 +715,7 @@
                         pushing us towards the best solutions. One of the cool things about him is his superpower of
                         turning messy, vague ideas into something concrete and organized.
                     </blockquote>
+                    <a class="link" onclick="openModal('jose-modal')">Read More</a>
                     <figure class="testimonial-author">
                         <img
                                 src="assets/images/testimonials/jose.jpg"
