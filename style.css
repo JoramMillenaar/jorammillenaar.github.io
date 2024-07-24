@@ -1366,13 +1366,16 @@ header.modal-box {
 
 .modal-article {
     background: var(--bg-color-secondary);
-    padding: var(--gutter-x-small);
+    padding: 0 var(--gutter-x-small);
     border-radius: var(--gutter-nano);
     box-shadow: 0 0 10px gray;
     margin: var(--gutter-micro);
-    margin-bottom: 3vw;
     height: fit-content;
     min-width: 250px;
+}
+
+.modal-article h4 {
+  padding-top: var(--gutter-x-small);
 }
 
 header .modal-article {
@@ -1423,7 +1426,7 @@ header .modal-article {
 }
 
 .modal-text {
-    padding-top: var(--gutter-x-small);
+    padding: var(--gutter-micro) 0;
 }
 
 .close {

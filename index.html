@@ -82,10 +82,6 @@
 <script>
       const theme = localStorage.getItem("theme") || "dark";
       document.body.classList.add(theme);
-
-
-
-
 </script>
 
 <header class="header">
@@ -182,29 +178,50 @@
         </header>
         <div class="modal-box">
             <div class="modal-article" onclick="preventClick(event)">
-                <h3 class="h3">Responsibilities & Contributions</h3>
+                <p class="modal-text">
+                    As a key member of the software development team at Therapieland B.V., I utilized my expertise to
+                    advance our e-health platform, providing mental health services in the Netherlands.
+                </p>
+            </div>
+            <div class="modal-article" onclick="preventClick(event)">
+                <h4 class="h4">Key Responsibilities</h4>
                 <ul class="modal-text">
-                    <li>Developed and maintained large backend systems, managed server operations and application
-                        deployments. Drove adoption of AI tools like Co-Pilot and ChatGPT, which significantly improved
-                        team productivity and reduced bugs.
+                    <li>
+                        Developed and maintained large backend systems using Python and Django, alongside database
+                        management through Django ORM and SQL.
                     </li>
-                    <li>Led the final push in a three-year database migration project, achieving a 200% increase in
-                        development pace. Encouraged Test-Driven Development (TDD), achieving 95% test coverage and
-                        smooth post-launch phase.
+                    <li>
+                        Managed server operations on GCP and Linux and managed application deployments with Kubernetes
+                        and Docker.
                     </li>
-                    <li>Optimized a crucial migration script using Pandas and SQL, reducing its runtime from two weeks
-                        to just 12 hours. Coached team members in TDD, advanced SQL techniques, and effective AI usage.
-                    </li>
-                    <li>Fostered a team culture balancing productivity with support and enjoyment, enhancing team
-                        bonding and continuous learning.
+                    <li>
+                        Broadened my JavaScript capabilities, gaining practical experience with front-end frameworks
+                        like Vue.js to ensure seamless integration between front-end and back-end.
                     </li>
                 </ul>
             </div>
-            <!--            <div class="modal-article" onclick="preventClick(event)">-->
-            <!--                <h3 class="h3">References and additional information</h3>-->
-            <!--                <p class="modal-text">For further details on projects and contributions, please refer to the project documentation and team-->
-            <!--                    meetings records available on request.</p>-->
-            <!--            </div>-->
+            <div class="modal-article" onclick="preventClick(event)">
+                <h4 class="h4">Notable Contributions</h4>
+                <ul class="modal-text">
+                    <li>
+                        Led the final push in a three-year database migration project during the critical weeks leading
+                        up to the deadline. By doubling my working hours and inspiring a similar commitment from my
+                        team, we achieved a 200% increase in development.
+                    </li>
+
+                    <li>
+                        Encouraged Test-Driven Development (TDD), conducting tutorials and practical sessions that led
+                        to the project’s 95% test coverage. The post-launch phase was remarkably smooth, with only a
+                        handful of minor issues that were quickly resolved—significantly fewer than typical for a
+                        project of this scale, which impressed both peers and management.
+                    </li>
+
+                    <li>
+                        Optimized a crucial migration script, using the Pandas library and restructured SQL queries, its
+                        runtime was reduced from an estimated two weeks to just 12 hours.
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
