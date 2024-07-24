@@ -1366,16 +1366,12 @@ header.modal-box {
 
 .modal-article {
     background: var(--bg-color-secondary);
-    padding: 0 var(--gutter-x-small);
+    padding: var(--gutter-x-small);
     border-radius: var(--gutter-nano);
     box-shadow: 0 0 10px gray;
     margin: var(--gutter-micro);
     height: fit-content;
     min-width: 250px;
-}
-
-.modal-article h4 {
-  padding-top: var(--gutter-x-small);
 }
 
 header .modal-article {
