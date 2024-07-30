@@ -1372,6 +1372,7 @@ header.modal-box {
     margin: var(--gutter-micro);
     height: fit-content;
     min-width: 250px;
+    font-weight: 300;
 }
 
 header .modal-article {
