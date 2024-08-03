@@ -838,6 +838,21 @@ body.dark .work-links img {
   margin-block-start: auto;
 }
 
+.star-box {
+    text-decoration: none;
+    color: var(--body);
+    font-size: var(--text-small);
+    align-content: end;
+    font-size: var(--text-medium);
+}
+
+.star-icon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    fill: currentColor;
+    height: var(--text-medium);
+}
+
 .reaction-count {
   display: inline-flex;
   align-items: center;

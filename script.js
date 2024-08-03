@@ -145,3 +145,17 @@ function openModal(id) {
   modal = document.getElementById(id)
   modal.style.display = "flex";
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const apiUrl = 'https://api.github.com/repos/JoramMillenaar/AudioFlex';
+
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        const starCount = data.stargazers_count;
+        const reactionContainer = document.querySelector('.star-box');
+        reactionContainer.innerHTML += `${starCount}`;
+    })
+    .catch(error => console.error('Error fetching GitHub data:', error));
+});
+
