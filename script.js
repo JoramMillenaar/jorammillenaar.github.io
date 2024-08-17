@@ -63,15 +63,15 @@ workEls.forEach((workEl) => {
 const switchThemeEl = document.querySelector('input[type="checkbox"]');
 const storedTheme = localStorage.getItem("theme");
 
+document.body.classList.remove("dark");
+document.body.classList.add("light");
+localStorage.setItem("theme", "light");
 //switchThemeEl.checked = storedTheme === "dark" || storedTheme === null;
 
 //switchThemeEl.addEventListener("click", () => {
 //  const isChecked = switchThemeEl.checked;
 //
 //  if (!isChecked) {
-//    document.body.classList.remove("dark");
-//    document.body.classList.add("light");
-//    localStorage.setItem("theme", "light");
 //    switchThemeEl.checked = false;
 //  } else {
 //    document.body.classList.add("dark");

@@ -69,7 +69,7 @@ body.dark {
 body.light {
   --bg-color-primary: #fbfbfb;
   --bg-color-secondary: #ffffff;
-  --important: #000;
+  --important: #191919;
   --sub: #111;
   --body: #585b63;
   --border: #62626234;
@@ -99,7 +99,7 @@ body.light {
 }
 
 html {
-  font-family: "Mona Sans", sans-serif;
+  font-family: "Montserrat", "Mona Sans", sans-serif;
   box-sizing: border-box;
   scroll-padding-top: var(--scroll-padding);
 }
@@ -492,7 +492,7 @@ main {
 /* --------------------------------- */
 
 .header {
-  background: linear-gradient(-45deg, #2E3532, #4D7EA8, #FEC196, #F71735, #C2095A);
+  background: linear-gradient(-45deg, #e68c3a, #E5A876, #94b6ef, #213e60);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   height: 100vh;
@@ -504,7 +504,8 @@ main {
 }
 
 .header-textbox {
-  color: white;
+  --important: #F4F2EF;
+  color: var(--important);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1396,7 +1397,7 @@ input:checked {
     display: none;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(19, 19, 19, 0.1);
 }
 
 .modal-container {
@@ -1414,6 +1415,7 @@ input:checked {
 .modal-box {
     min-width: 400px;
     flex: 2;
+    z-index: 2;
 }
 
 header.modal-box {
@@ -1497,6 +1499,13 @@ header .modal-article {
 
 .modal-img {
     border-radius: var(--gutter-nano) var(--gutter-nano) 0 0;
+}
+
+.gradient-line {
+  position: absolute;
+  z-index: 2;
+  top: 28px;
+  right: -160px;
 }
 
 
