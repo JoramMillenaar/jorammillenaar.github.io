@@ -71,7 +71,7 @@ body.light {
   --bg-color-secondary: #ffffff;
   --important: #191919;
   --sub: #111;
-  --body: #585b63;
+  --body: #43454C;
   --border: #62626234;
   --border-dark: #5e5e5e1f;
   --gradient-border: linear-gradient(to left bottom, #000000c6, #0e0d0d00);
@@ -501,18 +501,52 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
 }
 
 .header-textbox {
-  --important: #F4F2EF;
-  color: var(--important);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    --important: #F4F2EF;
+    color: var(--important);
+    align-self: center;
+    z-index: 2;
+    padding-right: 210px;
+    padding-left: var(--gutter-x-large);
+}
+
+
+@media (max-width: 1275px) {
+  .header-textbox {
+    padding-left: var(--gutter-large);
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-textbox {
+    padding-left: var(--gutter-medium);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-textbox {
+    padding: var(--gutter-small);
+  }
+  .main-img {
+    display: none;
+  }
 }
 
 .h1 span {
   display: block;
+}
+
+.main-img {
+  position: absolute;
+  right: -60px;
+  height: 120vh;
+  top: 0;
 }
 
 .header-text {
@@ -1503,9 +1537,8 @@ header .modal-article {
 
 .gradient-line {
   position: absolute;
-  z-index: 2;
-  top: 28px;
-  right: -160px;
+  top: 67px;
+  right: -132px;
 }
 
 

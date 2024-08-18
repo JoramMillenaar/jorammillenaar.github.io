@@ -22,14 +22,6 @@ const toggleNav = () => {
   }
 };
 
-//btnToggleNav.addEventListener("click", toggleNav);
-
-navMenu.addEventListener("click", (e) => {
-  if (e.target.localName === "a") {
-    toggleNav();
-  }
-});
-
 document.body.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && !nav.classList.contains("hidden")) {
     toggleNav();
