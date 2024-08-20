@@ -1,32 +1,6 @@
-const nav = document.querySelector(".nav");
-const navMenu = document.querySelector(".nav-items");
-const btnToggleNav = document.querySelector(".menu-btn");
 const workEls = document.querySelectorAll(".work-box");
 const workImgs = document.querySelectorAll(".work-img");
 const mainEl = document.querySelector("main");
-const yearEl = document.querySelector(".footer-text span");
-
-const toggleNav = () => {
-  nav.classList.toggle("hidden");
-
-  // Prevent screen from scrolling when menu is opened
-  document.body.classList.toggle("lock-screen");
-
-  if (nav.classList.contains("hidden")) {
-    btnToggleNav.textContent = "menu";
-  } else {
-    // When menu is opened after transition change text respectively
-    setTimeout(() => {
-      btnToggleNav.textContent = "close";
-    }, 475);
-  }
-};
-
-document.body.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && !nav.classList.contains("hidden")) {
-    toggleNav();
-  }
-});
 
 // Animating work instances on scroll
 
@@ -49,30 +23,6 @@ let observer = new IntersectionObserver(
 workEls.forEach((workEl) => {
   observer.observe(workEl);
 });
-
-// Toggle theme and store user preferred theme for future
-
-const switchThemeEl = document.querySelector('input[type="checkbox"]');
-const storedTheme = localStorage.getItem("theme");
-
-document.body.classList.remove("dark");
-document.body.classList.add("light");
-localStorage.setItem("theme", "light");
-//switchThemeEl.checked = storedTheme === "dark" || storedTheme === null;
-
-//switchThemeEl.addEventListener("click", () => {
-//  const isChecked = switchThemeEl.checked;
-//
-//  if (!isChecked) {
-//    switchThemeEl.checked = false;
-//  } else {
-//    document.body.classList.add("dark");
-//    document.body.classList.remove("light");
-//    localStorage.setItem("theme", "dark");
-//  }
-//});
-
-// Trap the tab when menu is opened
 
 const lastFocusedEl = document.querySelector('a[data-focused="last-focused"]');
 
@@ -102,8 +52,6 @@ logosWrappers.forEach(async (logoWrapper, i) => {
     logos[2].classList.add("hide", "to-bottom");
   }, 5600);
 });
-
-yearEl.textContent = new Date().getFullYear();
 
 document.getElementById('youtube-video-placeholder').addEventListener('click', function() {
     var width = this.offsetWidth;
