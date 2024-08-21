@@ -389,6 +389,7 @@ main {
   animation: gradient 20s ease infinite;
   height: 100vh;
   min-block-size: calc(100vh + var(--radius));
+  overflow-x: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1258,17 +1259,19 @@ input:checked {
   flex-wrap: wrap;
   height: 100%;
   position: absolute;
-  padding: 5% 5% 0 5%;
+  padding: 5%;
 }
 
 .modal-box {
   min-width: 400px;
   flex: 2;
   z-index: 4;
+  align-self: center;
 }
 
 header.modal-box {
   flex: 1;
+  align-self: auto;
 }
 
 .modal-article {
@@ -1355,6 +1358,15 @@ header .modal-article {
   top: 2vw;
   right: -270px;
   rotate: 46deg;
+}
+
+.line-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  right: 0;
 }
 
 
