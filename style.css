@@ -389,7 +389,7 @@ main {
   animation: gradient 20s ease infinite;
   height: 100vh;
   min-block-size: calc(100vh + var(--radius));
-  overflow-x: hidden;
+  overflow: hidden;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
