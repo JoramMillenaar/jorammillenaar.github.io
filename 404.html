@@ -2,35 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=/" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, follow" />
 
-    <!-- Update favicon href attribute with image of yourself -->
-    <link rel="icon" href="<%= BASE_URL %>favicon.svg" type="image/svg+xml" />
-    <link rel="alternate icon" href="<%= BASE_URL %>favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" />
 
-    <title>Joram Millenaar's Portfolio</title>
+    <title>Page not found — Joram Millenaar</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-family: 'Montserrat', system-ui, sans-serif;
+        background: #0f0f10;
+        color: #f5f5f5;
+        text-align: center;
+        padding: 1.5rem;
+      }
+      a {
+        color: #c9a227;
+      }
+    </style>
   </head>
 
   <body>
-    <script>
-      if (sessionStorage.redirect) {
-        delete sessionStorage.redirect;
-      } else {
-        sessionStorage.redirect = location.pathname + location.search;
-        window.location = '/';
-      }
-    </script>
-    <noscript>
-      <strong
-        >We're sorry but this website doesn't work
-        properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <h1>404 — Page not found</h1>
+    <p>The page you are looking for doesn't exist or has moved.</p>
+    <p><a href="/">Back to homepage</a> · <a href="/blog">Read the blog</a></p>
   </body>
 </html>
