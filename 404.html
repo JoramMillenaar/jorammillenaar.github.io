@@ -10,6 +10,18 @@
     <link rel="alternate icon" href="/favicon.ico" />
 
     <title>Page not found — Joram Millenaar</title>
+    <script>
+      // GitHub Pages serves flat files (no-trailing-slash is canonical).
+      // Normalize a trailing-slash URL to its canonical form before showing 404.
+      (function () {
+        var loc = window.location;
+        if (loc.pathname.length > 1 && /\/+$/.test(loc.pathname)) {
+          loc.replace(
+            loc.pathname.replace(/\/+$/, '') + loc.search + loc.hash,
+          );
+        }
+      })();
+    </script>
     <style>
       body {
         margin: 0;

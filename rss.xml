@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joram Millenaar&apos;s Portfolio</title>
-    <link>https://jorammillenaar.com/blog/</link>
+    <link>https://jorammillenaar.com/blog</link>
     <description>Writing on software engineering, local-first AI, and building products by Joram Millenaar.</description>
     <language>en</language>
     <atom:link href="https://jorammillenaar.com/rss.xml" rel="self" type="application/rss+xml" />
     <lastBuildDate>Fri, 19 Jun 2026 00:00:00 GMT</lastBuildDate>
     <item>
-      <title>What I&apos;d Do Differently Building an Ambient Clinical Documentation System</title>
-      <link>https://jorammillenaar.com/blog/graphed-ambient-clinical-documentation-system/</link>
-      <guid isPermaLink="true">https://jorammillenaar.com/blog/graphed-ambient-clinical-documentation-system/</guid>
+      <title>Lessons from my Ambient Clinical Documentation System</title>
+      <link>https://jorammillenaar.com/blog/graphed-ambient-clinical-documentation-system</link>
+      <guid isPermaLink="true">https://jorammillenaar.com/blog/graphed-ambient-clinical-documentation-system</guid>
       <description>What I learned building a clinical AI scribe, and what I&apos;d build differently now</description>
       <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
       <category>HIPAA</category>
@@ -19,8 +19,8 @@
     </item>
     <item>
       <title>For engagement sake: Ship one thing</title>
-      <link>https://jorammillenaar.com/blog/ship-one-thing/</link>
-      <guid isPermaLink="true">https://jorammillenaar.com/blog/ship-one-thing/</guid>
+      <link>https://jorammillenaar.com/blog/ship-one-thing</link>
+      <guid isPermaLink="true">https://jorammillenaar.com/blog/ship-one-thing</guid>
       <description>Shipping one seemingly simple thing that works beats shipping many things that might. The proof is that your users start engaging.</description>
       <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
       <category>engineering</category>
@@ -30,8 +30,8 @@
     </item>
     <item>
       <title>The growing attention deficit</title>
-      <link>https://jorammillenaar.com/blog/attention-deficit/</link>
-      <guid isPermaLink="true">https://jorammillenaar.com/blog/attention-deficit/</guid>
+      <link>https://jorammillenaar.com/blog/attention-deficit</link>
+      <guid isPermaLink="true">https://jorammillenaar.com/blog/attention-deficit</guid>
       <description>Everyone is out for our attention, more than ever. And we&apos;re all disengaging with it all as a result</description>
       <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
       <category>trends</category>
@@ -39,8 +39,8 @@
     </item>
     <item>
       <title>Building local AI in a sandboxed world</title>
-      <link>https://jorammillenaar.com/blog/local-ai-in-a-sandbox/</link>
-      <guid isPermaLink="true">https://jorammillenaar.com/blog/local-ai-in-a-sandbox/</guid>
+      <link>https://jorammillenaar.com/blog/local-ai-in-a-sandbox</link>
+      <guid isPermaLink="true">https://jorammillenaar.com/blog/local-ai-in-a-sandbox</guid>
       <description>What trying to build a fully local semantic search plugin for Obsidian taught me about constraints, sandboxed environments, and real engineering trade-offs.</description>
       <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
       <category>engineering</category>
